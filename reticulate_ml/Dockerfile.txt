@@ -1,0 +1,9 @@
+FROM rocker/tensorflow:3.6.0
+
+# Python Xgboost for CPU
+USER rstudio
+RUN pip3 --no-cache-dir install \
+    pandas \
+    pysam \
+    pyfaidx
+USER root
